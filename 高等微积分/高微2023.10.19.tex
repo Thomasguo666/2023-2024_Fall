@@ -264,7 +264,7 @@
     \end{itemize}
 \end{lemma}
 \begin{proof}[证明引理第一条]
-    对于$\forall \varepsilon > 0$, 取$\delta = \min \{ A - A \mathrm{e}^{-1} , A \mathrm{e}^{\varepsilon} - A \}$, 则
+    对于$\forall \varepsilon > 0$, 取$\delta = \min \{ A - A \mathrm{e}^{-\epsilon} , A \mathrm{e}^{\varepsilon} - A \}$, 则
     $0 < \left| y - A \right| < \delta$, 有$A \mathrm{e}^{- \varepsilon} < y < A \mathrm{e}^{\varepsilon}$, 进而
     \begin{equation}
       \mathrm{e}^{-\varepsilon} < \frac{y}{A} < \mathrm{e}^{\varepsilon}
@@ -288,12 +288,12 @@
     \end{equation}
     由此知,
     \begin{equation}
-      C < \mathrm{e}^{y} - \mathrm{e}^{C} = \mathrm{e}^{C} \left( \mathrm{e}^{y-C} - 1 \right) < \mathrm{e}^{C} \left( \mathrm{e}^{\frac{1}{n}} - 1 \right) < \mathrm{e}^{C} \frac{\varepsilon}{\mathrm{e}^{C}} = \varepsilon.
+      \mathrm{e}^{y} - \mathrm{e}^{C} = \mathrm{e}^{C} \left( \mathrm{e}^{y-C} - 1 \right) < \mathrm{e}^{C} \left( \mathrm{e}^{\frac{1}{n}} - 1 \right) < \mathrm{e}^{C} \frac{\varepsilon}{\mathrm{e}^{C}} = \varepsilon.
     \end{equation}
 \end{proof}
 
 \begin{proposition}
-    设 $\lim_{x \to x_0} f \left( x \right) = 0,\ \lim_{x \to x_0} f \left( x \right) g \left( x \right) = k $, 则
+    设 $\displaystyle \lim_{x \to x_0} f \left( x \right) = 0,\ \lim_{x \to x_0} f \left( x \right) g \left( x \right) = k $, 则
     \begin{equation}
       \lim_{x \to x_0} \left[ 1 + f \left( x \right)  \right] ^{g \left( x \right) } = \mathrm{e}^{k}.
     \end{equation}
